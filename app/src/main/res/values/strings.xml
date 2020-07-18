@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">WeDrive</string>
+    <string name="sloganText">The World is on Time!</string>
+    <string name="LogoName">WeDrive</string>
+
+
+    <!--   these strings for On Board screen  -->
+
+    <!--    Title -->
+
+    <string name="first_slide_title">Book &amp; We Drive\nYou Anywhere:</string>
+    <string name="second_slide_title">Anywhere - It Starts\nFrom Here:</string>
+    <string name="third_slide_title">WeDrive - Getting\nYou Move Ahead:</string>
+    <string name="fourth_slide_title">Success is in Motion\nMove &amp; Reach It:</string>
+
+
+    <!--    Description-->
+
+    <string name="first_slide_desc_n1">There We Are Reinventing The World\'s Next</string>
+    <string name="first_slide_desc_n2">Transportation And Fleight System</string>
+    <string name="first_slide_desc_n3"> To Significant Level In Such Different Era.</string>
+    <string name="second_slide_desc_n1">The Whole Idea is To Disrupt Transportation</string>
+    <string name="second_slide_desc_n2">Industry Providing End to End Technological</string>
+    <string name="second_slide_desc_n3">Solutions To Driver &amp; Riders</string>
+    <string name="third_slide_desc_n1">Maintaining Better service is our destination,</string>
+    <string name="third_slide_desc_n2">While Growth &amp; Perfection In Every Business</string>
+    <string name="third_slide_desc_n3">and Families are out Mission.</string>
+    <string name="fourth_slide_desc_n1">Before Moving The World, We Should Move</string>
+    <string name="fourth_slide_desc_n2">Our-self forward, Then Other Follow.</string>
+    <string name="fourth_slide_desc_n3"> </string>
+
+
+    <!--     Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="email_or_username">Email or Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="comfirm_password">Comfirm Password</string>
+    <string name="google">Google</string>
+    <string name="do_you_wont_to_exit">Do you wont to Exit ?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="email_or_mobile_number">Email or Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="exit_title">EXIT</string>
+    <string name="exit_message">Do you want to exit ?</string>
+    <string name="create_account_for_rides">Create Account for Rides</string>
+    <string name="sign_up_with_google">Sign Up With Google</string>
+    <string name="or">or</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="english">English ^</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="uzbekistan">Uzbekistan</string>
+    <string name="country_icon">Country Icon</string>
+    <string name="phone">  Phone</string>
+    <string name="we_base_user_data_safe_amp_secure"><![CDATA[We Base User Data Safe & Secure]]></string>
+    <string name="sms_verification_code_is_sent_to_number">SMS verification Code Is Sent To Number</string>
+    <string name="you_have_provided_below">You Have Provided Below</string>
+    <string name="try_e_mail">Try E-mail</string>
+    <string name="edit">Edit</string>
+    <string name="wow_forgot_password_we_help_you_reset">Wow, Forgot Password We Help You Reset</string>
+    <string name="easily_and_secure_go_a_head">Easily and Secure, Go a Head</string>
+    <string name="select">Select</string>
+    <string name="forgot_password_nomer">+9989******81</string>
+    <string name="using_e_mail">Using E-Mail</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="log_in_with_google">Log In with Google</string>
+    <string name="log_in">Log In</string>
+    <string name="enter_your_email_adress_to_comfirm_if_is_this_you">Enter Your Email Adress to Comfirm if is This You</string>
+    <string name="we_send_code_to_your_account">We Send Code To Your Account</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="email_adress">Email Adress</string>
+    <string name="try_with_mobile_number">Try With Mobile Number</string>
+    <string name="send_me_code">Send Me Code</string>
+    <string name="now_code_is_sent_amp_check_your_inbox"><![CDATA[Now Code is Sent & Check Your Inbox]]></string>
+    <string name="then_verify_by_entering_details">Then Verify By entering Details</string>
+    <string name="code">Code</string>
+    <string name="verify_and_login">Verify and Login</string>
+    <string name="verify_and_next">Verify and Next</string>
+    <string name="notify">Notify Me WeDrive Latest News\nand Update With SMS</string>
+    <string name="agreement">  I Agree To WeDrive Riders\n<a href="http://t.me/Programs_for_PC">Terms</a> and <a href="http://t.me/CMD_uz">Policies</a></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="let_s_move_then">Let\'s Move Then...</string>
+
+
+    <string-array name="telephone_country">
+        <item>Uzbekistan</item>
+        <item>Russia</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Pусский</item>
+        <item>O\'zbekcha</item>
+    </string-array>
+
+
+</resources>

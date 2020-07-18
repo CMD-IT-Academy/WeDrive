@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uz.Wedrive.wedrive">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sign.SignUp_Last_Page"></activity>
+        <activity android:name=".sign.GenderScreen" />
+        <activity android:name=".sign.Forgot_Password.Email_Verification" />
+        <activity android:name=".sign.Forgot_Password.Forgot_Password_Telephone" />
+        <activity android:name=".sign.Forgot_Password.Forgot_Password_email" />
+        <activity android:name=".sign.Forgot_Password.ForgotPassword" />
+        <activity android:name=".sign.VerificationScreen" />
+        <activity
+            android:name=".sign.Telephone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sign.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sign.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common.OnBoarding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".User.WeDriveHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
