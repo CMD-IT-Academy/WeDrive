@@ -6,17 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".User.WeDriveHome">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="center"
-        android:text="AN ERRER TO CONNECTION WITH A SERVER"
-        android:textColor="@color/colorBlack"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:src="@drawable/wedrive_logo_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/taxirasm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_male"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/Telefon_nomer"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/telefon_nomer_spiner"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <ImageView
+        android:id="@+id/yukrasm"
+        android:layout_width="157dp"
+        android:layout_height="158dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Telefon_nomer"
+        app:srcCompat="@drawable/yuk_tashish_logo"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/taxirasmni"
+        android:layout_width="157dp"
+        android:layout_height="158dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Telefon_nomer"
+        app:srcCompat="@drawable/yuk_tashish_logo"
+        tools:ignore="MissingConstraints" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

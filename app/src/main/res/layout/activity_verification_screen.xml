@@ -174,7 +174,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Resend Code"
+        android:text="@string/resend_code"
         android:textAllCaps="false"
         android:textColor="@color/colorBlack"
         android:textSize="20sp"

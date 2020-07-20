@@ -92,6 +92,7 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="let_s_move_then">Let\'s Move Then...</string>
+    <string name="resend_code">Resend Code</string>
 
 
     <string-array name="telephone_country">
