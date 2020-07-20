@@ -107,7 +107,7 @@
             android:layout_marginTop="16dp"
             android:drawableStart="@drawable/ic_location"
             android:gravity="center"
-            android:text="Uzbekistan"
+            android:text="Karvak city"
             android:textColor="@color/colorBlack"
             android:textSize="20sp"
             android:textStyle="bold"
