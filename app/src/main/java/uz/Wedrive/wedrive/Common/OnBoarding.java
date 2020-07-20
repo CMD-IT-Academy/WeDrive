@@ -32,7 +32,7 @@ public class OnBoarding extends AppCompatActivity {
 
     ImageView Page_Image, Dots_load1, Dots_load2, Dots_load3, Dots_load4;
     TextView SliderHeading;
-
+//masalan o'zgardima? qaraqanin
     Integer page_soni, ikkilik;
 
     Button skip;
