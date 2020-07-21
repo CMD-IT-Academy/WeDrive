@@ -1,10 +1,8 @@
 package uz.Wedrive.wedrive.User;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,30 +11,30 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import uz.Wedrive.wedrive.R;
 
-public class WeDriveHome extends AppCompatActivity {
+public class ActivityScreen extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.we_drive_home);
+        setContentView(R.layout.activity_screen);
 
         bottomNavigationView = findViewById(R.id.bottom_menu);
 
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.activity);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.activity:
-                        Intent intent  = new Intent(getApplicationContext(), ActivityScreen.class);
-                        startActivity(intent);
-                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.home:
+                        Intent intent  = new Intent(getApplicationContext(), WeDriveHome.class);
+                        startActivity(intent);
+                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.more:
@@ -50,27 +48,5 @@ public class WeDriveHome extends AppCompatActivity {
                 return false;
             }
         });
-
-    }
-
-    @Override
-    public void onBackPressed() {
-        final AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle(R.string.exit_title);
-        alertDialog.setIcon(R.drawable.ic_exit);
-        alertDialog.setCancelable(true);
-        alertDialog.setMessage(R.string.exit_message);
-        alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
-        alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
-        alertDialog.show();
     }
 }

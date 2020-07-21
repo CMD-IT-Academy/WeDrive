@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sign.SignUp_Last_Page"></activity>
+        <activity android:name=".User.ActivityScreen"></activity>
+        <activity android:name=".User.MoreScreen" />
+        <activity android:name=".sign.SignUp_Last_Page" />
         <activity android:name=".sign.GenderScreen" />
         <activity android:name=".sign.Forgot_Password.Email_Verification" />
         <activity android:name=".sign.Forgot_Password.Forgot_Password_Telephone" />
