@@ -40,7 +40,7 @@
 
     <Spinner
         android:id="@+id/username"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/telefon_nomer_spiner"
@@ -77,10 +77,10 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_menu"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/navigation_menu"
         android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_menu"
         app:itemBackground="@color/colorWhite"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
