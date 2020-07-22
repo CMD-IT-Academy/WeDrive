@@ -24,14 +24,12 @@ import uz.Wedrive.wedrive.sign.TelephoneSpinnerAdapter;
 
 public class WeDriveHome extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
     Spinner user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.we_drive_home);
 
-        bottomNavigationView = findViewById(R.id.bottom_menu);
         user = findViewById(R.id.username);
         final List<TelephoneSpinner> customList1 = new ArrayList<>();
         customList1.add(new TelephoneSpinner(R.drawable.ic_user, "Bog'ibek Matyaqubov"));
@@ -52,34 +50,20 @@ public class WeDriveHome extends AppCompatActivity {
             }
         });
 
-        bottomNavigationView.setSelectedItemId(R.id.home);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-                    case R.id.activity:
-                        Intent intent  = new Intent(getApplicationContext(), ActivityScreen.class);
-                        startActivity(intent);
-                        overridePendingTransition(0, 0);
-                        return true;
-
-                    case R.id.home:
-                        return true;
-
-                    case R.id.more:
-                        Intent intent1  = new Intent(getApplicationContext(), MoreScreen.class);
-                        startActivity(intent1);
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-
-
-                return false;
-            }
-        });
-
     }
+
+    public void activity(View view) {
+        Intent intent = new Intent(getApplicationContext(), ActivityScreen.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
+    public void more(View view) {
+        Intent intent = new Intent(getApplicationContext(), MoreScreen.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -101,4 +85,7 @@ public class WeDriveHome extends AppCompatActivity {
         });
         alertDialog.show();
     }
+
+
 }
+
