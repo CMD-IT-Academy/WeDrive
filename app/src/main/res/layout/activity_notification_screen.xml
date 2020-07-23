@@ -7,5 +7,12 @@
     tools:context=".User.Notification_screen">
 
 
-
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notfication"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="271dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
