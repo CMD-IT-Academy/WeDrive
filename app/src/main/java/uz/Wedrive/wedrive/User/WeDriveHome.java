@@ -87,5 +87,10 @@ public class WeDriveHome extends AppCompatActivity {
     }
 
 
+    public void settings(View view) {
+        Intent intent = new Intent(getApplicationContext(), SettingScreen.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
 }
 
