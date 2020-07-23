@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.ActivityScreen"></activity>
+        <activity android:name=".User.Notification_screen"></activity>
+        <activity android:name=".User.ActivityScreen" />
         <activity android:name=".User.MoreScreen" />
         <activity android:name=".sign.SignUp_Last_Page" />
         <activity android:name=".sign.GenderScreen" />
