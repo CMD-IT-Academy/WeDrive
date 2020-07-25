@@ -8,4 +8,6 @@
     <color name="WeDrive">#FAC317</color>
     <color name="colorRed">#FF0000</color>
     <color name="colorTrans">#000000</color>
+    <color name="dark_mode">#121212</color>
+    <color name="text_dark">#AFACAC</color>
 </resources>

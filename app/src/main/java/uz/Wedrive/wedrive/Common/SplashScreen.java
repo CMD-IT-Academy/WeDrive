@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import uz.Wedrive.wedrive.R;
+import uz.Wedrive.wedrive.User.WeDriveHome;
 import uz.Wedrive.wedrive.sign.Login;
 
 public class SplashScreen extends AppCompatActivity {
@@ -44,7 +45,7 @@ public class SplashScreen extends AppCompatActivity {
                     finish();
                 }
                 else {
-                    Intent intent = new Intent(SplashScreen.this, Login.class);
+                    Intent intent = new Intent(SplashScreen.this, WeDriveHome.class);
                     startActivity(intent);
                     finish();
                 }
