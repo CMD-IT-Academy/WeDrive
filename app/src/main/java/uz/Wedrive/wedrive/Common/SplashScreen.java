@@ -40,12 +40,12 @@ public class SplashScreen extends AppCompatActivity {
                     editor.putBoolean("firstTime", false);
                     editor.commit();
 
-                    Intent intent = new Intent(SplashScreen.this, OnBoarding.class);
+                    Intent intent = new Intent(SplashScreen.this, Login.class);
                     startActivity(intent);
                     finish();
                 }
                 else {
-                    Intent intent = new Intent(SplashScreen.this, WeDriveHome.class);
+                    Intent intent = new Intent(SplashScreen.this, Login.class);
                     startActivity(intent);
                     finish();
                 }
