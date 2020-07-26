@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Sign_up_new"></activity>
         <activity android:name=".User.SettingScreen" />
         <activity android:name=".User.ActivityScreen" />
         <activity android:name=".User.MoreScreen" />
@@ -35,8 +36,9 @@
             android:name=".User.WeDriveHome"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Common.Splash" android:theme="@style/SplashTheme"
-            android:screenOrientation="portrait">
+            android:name=".Common.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
