@@ -44,16 +44,16 @@
             tools:ignore="OnClick" />
 
         <FrameLayout
+            android:layout_marginTop="80dp"
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/femaleRB">
+            app:layout_constraintTop_toBottomOf="@+id/icfemale">
 
             <Switch
                 android:id="@+id/notify_sms_switch"
@@ -193,24 +193,34 @@
 
         </LinearLayout>
 
-        <RadioButton
-            android:id="@+id/maleRB"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/TFemale"
-            app:layout_constraintStart_toStartOf="@+id/TFemale"
-            app:layout_constraintTop_toBottomOf="@+id/TFemale"
-            tools:ignore="MissingConstraints" />
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/icfemale">
 
-        <RadioButton
-            android:id="@+id/femaleRB"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="end"
-            app:layout_constraintEnd_toEndOf="@+id/TMale"
-            app:layout_constraintStart_toStartOf="@+id/TMale"
-            app:layout_constraintTop_toBottomOf="@+id/TMale"
-            tools:ignore="MissingConstraints" />
+            <RadioButton
+                android:text="Male"
+                android:id="@+id/femaleRB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+            <Space
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="Female"
+                android:id="@+id/maleRB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+
+        </RadioGroup>
+
 
         <Spinner
             android:id="@+id/Gender_til"
