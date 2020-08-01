@@ -1,7 +1,6 @@
 package uz.Wedrive.wedrive.User;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
@@ -11,6 +10,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import uz.Wedrive.wedrive.R;
@@ -24,7 +24,7 @@ public class SettingScreen extends AppCompatActivity {
     EditText setting_search;
     Button setting_LogOut;
     int a;
-    SwitchCompat darkmode;
+    Switch darkmode;
     ConstraintLayout Settings_Oyna, settings_main_layout, settings_user_layout, settings_edit_profile_layout, settings_location_layout;
     ConstraintLayout settings_payment_layout, settings_language_layout, settings_notification_layout, settings_dark_mode_layout;
     @Override

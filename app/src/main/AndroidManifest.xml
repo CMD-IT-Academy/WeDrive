@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Sign_up_new"></activity>
+        <activity android:name=".User.Payment_Settings" />
         <activity android:name=".User.SettingScreen" />
         <activity android:name=".User.ActivityScreen" />
         <activity android:name=".User.MoreScreen" />
@@ -36,7 +37,7 @@
             android:name=".User.WeDriveHome"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Common.Splash"
+            android:name=".Common.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>

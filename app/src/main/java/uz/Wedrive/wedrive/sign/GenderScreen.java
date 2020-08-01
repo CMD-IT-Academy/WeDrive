@@ -30,7 +30,7 @@ public class GenderScreen extends AppCompatActivity {
         setContentView(R.layout.activity_gender_screen);
 
 
-        radioGroup = findViewById(R.id.rgroup);
+        radioGroup = findViewById(R.id.radio_group);
         Gender_til = findViewById(R.id.Gender_til);
 //        radioId = radioGroup.getCheckedRadioButtonId();
         radioButton = findViewById(radioGroup.getCheckedRadioButtonId());
