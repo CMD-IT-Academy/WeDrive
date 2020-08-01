@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_marginTop="80dp"
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icfemale">
+
+            <Switch
+                android:id="@+id/notify_sms_switch"
+                android:layout_width="73dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="15dp"
+                android:checked="true"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/notify_sms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/notify_sms"
+                tools:ignore="KeyboardInaccessibleWidget,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/notify_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/notify"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/agree_policy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <Switch
+                android:id="@+id/gree_poliacy_switch"
+                android:layout_width="73dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="15dp"
+                android:checked="true"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/agree_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/agreement"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/icmale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_male"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/icfemale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_female"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/icfemale">
+
+            <RadioButton
+                android:text="Male"
+                android:id="@+id/femaleRB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+            <Space
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="Female"
+                android:id="@+id/maleRB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/TMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/male"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/icmale"
+            app:layout_constraintStart_toStartOf="@+id/icmale"
+            app:layout_constraintTop_toBottomOf="@+id/icmale" />
+
+        <TextView
+            android:id="@+id/TFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/female"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/icfemale"
+            app:layout_constraintStart_toStartOf="@+id/icfemale"
+            app:layout_constraintTop_toBottomOf="@+id/icfemale" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
