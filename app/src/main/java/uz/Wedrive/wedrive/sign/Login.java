@@ -11,6 +11,7 @@ import android.widget.Spinner;
 
 
 import uz.Wedrive.wedrive.R;
+import uz.Wedrive.wedrive.Sign_up_new;
 import uz.Wedrive.wedrive.sign.Forgot_Password.ForgotPassword;
 
 public class Login extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void signup(View view) {
-        Intent intent = new Intent(getApplicationContext(), SignUp.class);
+        Intent intent = new Intent(getApplicationContext(), Sign_up_new.class);
         startActivity(intent);
         finish();
     }

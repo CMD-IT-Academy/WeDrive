@@ -37,7 +37,7 @@
             android:name=".User.WeDriveHome"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Common.SplashScreen"
+            android:name=".Common.Splash"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>

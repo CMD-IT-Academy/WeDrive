@@ -30,7 +30,6 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
 
-
                 onBoardingScreen = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
                 boolean isFirstTime = onBoardingScreen.getBoolean("firstTime", true);
 
@@ -40,7 +39,7 @@ public class SplashScreen extends AppCompatActivity {
                     editor.putBoolean("firstTime", false);
                     editor.commit();
 
-                    Intent intent = new Intent(SplashScreen.this, Login.class);
+                    Intent intent = new Intent(SplashScreen.this, OnBoarding.class);
                     startActivity(intent);
                     finish();
                 }
