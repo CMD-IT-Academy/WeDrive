@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_back_settings_light"
-            tools:ignore="ContentDescription,OnClick" />
+            tools:ignore="ContentDescription,OnClick,VectorDrawableCompat" />
 
         <ImageView
             android:id="@+id/search_settings"
@@ -38,7 +38,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_search_settings_light"
-            tools:ignore="ContentDescription,OnClick" />
+            tools:ignore="ContentDescription,OnClick,VectorDrawableCompat" />
 
         <TextView
             android:id="@+id/settings_text"
@@ -153,7 +153,7 @@
             app:layout_constraintStart_toEndOf="@+id/setting_LogOut"
             app:layout_constraintTop_toBottomOf="@+id/setting_user_id"
             app:srcCompat="@drawable/ic_add_account_light"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,VectorDrawableCompat" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -226,6 +226,7 @@
             android:id="@+id/Location_Info_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="setting_payment"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/Location_Info"
@@ -264,7 +265,8 @@
             app:layout_constraintEnd_toStartOf="@+id/Location_Info"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/location_icon" />
+            app:srcCompat="@drawable/location_icon"
+            tools:ignore="ContentDescription" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -292,6 +294,7 @@
             android:id="@+id/Payment_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="setting_payment"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/Payment"
             app:layout_constraintStart_toStartOf="parent"
@@ -311,6 +314,7 @@
             android:paddingLeft="15dp"
             android:paddingEnd="15dp"
             android:paddingRight="15dp"
+            android:onClick="setting_payment"
             android:text="@string/payment"
             android:textAllCaps="false"
             android:textColor="#000"
@@ -320,7 +324,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="RtlHardcoded" />
+            tools:ignore="OnClick,RtlHardcoded" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -364,7 +368,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="RtlHardcoded" />
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="50dp" />
 
         <TextView
             android:id="@+id/setting_sel"
@@ -497,7 +502,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="RtlHardcoded" />
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="50dp" />
 
         <Switch
             android:id="@+id/DarkModeSwitch"
@@ -507,7 +513,8 @@
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="15dp" />
 
         <ImageView
             android:id="@+id/DarkMode_icon"

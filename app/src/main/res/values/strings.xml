@@ -50,7 +50,7 @@
     <string name="submit">Submit</string>
     <string name="exit_title">EXIT</string>
     <string name="exit_message">Do you want to exit ?</string>
-    <string name="create_account_for_rides">Create Account for Rides</string>
+    <string name="create_account_for_rides">Create Account for Riding Service</string>
     <string name="sign_up_with_google">Sign Up With Google</string>
     <string name="or">or</string>
     <string name="first_name">First Name</string>
@@ -102,6 +102,7 @@
     <string name="personal">PERSONAL</string>
     <string name="notification">Notification</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="payment_settings">Payment Settings</string>
 
     <string-array name="telephone_country">
         <item>Uzbekistan</item>
@@ -112,6 +113,12 @@
         <item>English</item>
         <item>Pусский</item>
         <item>O\'zbekcha</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
     </string-array>
 
 

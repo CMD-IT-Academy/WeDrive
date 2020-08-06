@@ -7,7 +7,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
@@ -41,7 +43,6 @@ public class Sign_up_new extends AppCompatActivity {
         list.add(new PageFragment2());
         list.add(new PageFragment3());
         list.add(new PageFragment4());
-        list.add(new PageFragment5());
 
         next_btn = findViewById(R.id.login);
         wormDotsIndicator = findViewById(R.id.dot1);

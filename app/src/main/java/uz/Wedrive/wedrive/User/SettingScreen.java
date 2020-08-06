@@ -199,4 +199,8 @@ public class SettingScreen extends AppCompatActivity {
     }
 
 
+    public void setting_payment(View view) {
+        Intent intent = new Intent(getApplicationContext(), Settings_Payment.class);
+        startActivity(intent);
+    }
 }
