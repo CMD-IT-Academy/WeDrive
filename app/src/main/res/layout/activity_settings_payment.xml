@@ -7,7 +7,7 @@
     tools:context=".User.Settings_Payment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_payment_main_layout"
+        android:id="@+id/settings_faqs_main_layout"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="15dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/back_settings_payment"
+            android:id="@+id/back_settings_faqs"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:onClick="back_payment"
@@ -34,7 +34,7 @@
             tools:ignore="ContentDescription,OnClick,VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/more_settings_payment"
+            android:id="@+id/tools_settings_faqs"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:onClick="menu_payment"
@@ -46,7 +46,7 @@
             tools:ignore="ContentDescription,OnClick,VectorDrawableCompat" />
 
         <TextView
-            android:id="@+id/payment_text"
+            android:id="@+id/faqs_text"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:gravity="center"
@@ -56,8 +56,8 @@
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/more_settings_payment"
-            app:layout_constraintStart_toEndOf="@+id/back_settings_payment"
+            app:layout_constraintEnd_toStartOf="@+id/tools_settings_faqs"
+            app:layout_constraintStart_toEndOf="@+id/back_settings_faqs"
             app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_payment_main_layout">
+        app:layout_constraintTop_toBottomOf="@+id/settings_faqs_main_layout">
 
         <ImageView
             android:id="@+id/setting_user_picture"

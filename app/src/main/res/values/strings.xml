@@ -88,7 +88,7 @@
     <string name="verify_and_login">Verify and Login</string>
     <string name="verify_and_next">Verify and Next</string>
     <string name="notify">Notify Me WeDrive Latest News\nand Update With SMS</string>
-    <string name="agreement">  I Agree To WeDrive Riders\n<a href="http://t.me/Programs_for_PC">Terms</a> and <a href="http://t.me/CMD_uz">Policies</a></string>
+    <string name="agreement">  By Clicking Submit Button You Agree To WeDrive \n<a href="http://t.me/Programs_for_PC">Terms</a> and <a href="http://t.me/CMD_uz">Policies</a></string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="let_s_move_then">Let\'s Move Then...</string>
