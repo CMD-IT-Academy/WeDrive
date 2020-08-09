@@ -13,8 +13,6 @@ import android.widget.Spinner;
 import uz.Wedrive.wedrive.R;
 import uz.Wedrive.wedrive.Sign_up_new;
 import uz.Wedrive.wedrive.User.WeDriveHome;
-import uz.Wedrive.wedrive.sign.Forgot_Password.ForgotPassword;
-
 public class Login extends AppCompatActivity {
 
     Spinner Spinner_SignIn_til;
@@ -58,8 +56,4 @@ public class Login extends AppCompatActivity {
                 alertDialog.show();
     }
 
-    public void forgot_password (View view) {
-        Intent intent = new Intent(getApplicationContext(), ForgotPassword.class);
-        startActivity(intent);
-    }
 }

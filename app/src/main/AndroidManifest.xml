@@ -12,23 +12,13 @@
         <activity android:name=".User.FAQs"></activity>
         <activity android:name=".User.Settings_Payment" />
         <activity android:name=".Sign_up_new" />
-        <activity android:name=".User.Payment_Settings" />
         <activity android:name=".User.SettingScreen" />
         <activity android:name=".User.ActivityScreen" />
         <activity android:name=".User.MoreScreen" />
-        <activity android:name=".sign.SignUp_Last_Page" />
-        <activity android:name=".sign.GenderScreen" />
         <activity android:name=".sign.Forgot_Password.Email_Verification" />
         <activity android:name=".sign.Forgot_Password.Forgot_Password_Telephone" />
         <activity android:name=".sign.Forgot_Password.Forgot_Password_email" />
         <activity android:name=".sign.Forgot_Password.ForgotPassword" />
-        <activity android:name=".sign.VerificationScreen" />
-        <activity
-            android:name=".sign.Telephone"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".sign.SignUp"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".sign.Login"
             android:screenOrientation="portrait" />

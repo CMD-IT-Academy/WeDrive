@@ -51,7 +51,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            tools:ignore="RtlHardcoded" />
+            tools:ignore="RtlHardcoded"
+            android:drawableLeft="@drawable/ic_ui"
+            android:paddingLeft="35dp" />
 
         <Button
             android:id="@+id/button"
@@ -111,7 +113,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill"
+            android:drawableLeft="@drawable/ic_person" />
 
         <EditText
             android:id="@+id/LastName"
@@ -133,7 +136,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/FirstName"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill"
+            android:drawableLeft="@drawable/ic_lock" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -176,7 +180,8 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/or_chiziq"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_google" />
+            app:layout_constraintTop_toBottomOf="@+id/sign_google"
+            android:layout_marginLeft="32dp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -186,7 +191,8 @@
             android:layout_marginEnd="32dp"
             android:background="@drawable/or_chiziq"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sign_google" />
+            app:layout_constraintTop_toBottomOf="@+id/sign_google"
+            android:layout_marginRight="32dp" />
 
         <TextView
             android:id="@+id/textView10"
