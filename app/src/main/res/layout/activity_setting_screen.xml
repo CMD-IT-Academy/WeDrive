@@ -9,7 +9,7 @@
     android:padding="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_main_layout"
+        android:id="@+id/language_main_layout"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/back_settings"
+            android:id="@+id/back_language"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:onClick="back_settings"
@@ -41,7 +41,7 @@
             tools:ignore="ContentDescription,OnClick,VectorDrawableCompat" />
 
         <TextView
-            android:id="@+id/settings_text"
+            android:id="@+id/language_text"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:gravity="center"
@@ -52,7 +52,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/search_settings"
-            app:layout_constraintStart_toEndOf="@+id/back_settings"
+            app:layout_constraintStart_toEndOf="@+id/back_language"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
@@ -73,23 +73,23 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/search_settings"
-            app:layout_constraintStart_toEndOf="@+id/back_settings"
+            app:layout_constraintStart_toEndOf="@+id/back_language"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="Autofill" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_user_layout"
+        android:id="@+id/Favourite_place_layout"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/layout_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_main_layout">
+        app:layout_constraintTop_toBottomOf="@+id/language_main_layout">
 
         <ImageView
-            android:id="@+id/setting_user_picture"
+            android:id="@+id/Setting_user_picture"
             android:layout_width="150dp"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
@@ -102,7 +102,7 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/setting_user_name"
+            android:id="@+id/Settting_User_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -115,7 +115,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/setting_user_id"
+            android:id="@+id/Setting_user_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -124,8 +124,8 @@
             android:textColor="#000"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/setting_user_name"
-            app:layout_constraintTop_toBottomOf="@+id/setting_user_name" />
+            app:layout_constraintStart_toStartOf="@+id/Settting_User_name"
+            app:layout_constraintTop_toBottomOf="@+id/Settting_User_name" />
 
         <Button
             android:id="@+id/setting_LogOut"
@@ -138,9 +138,9 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/setting_user_id"
-            app:layout_constraintStart_toStartOf="@+id/setting_user_id"
-            app:layout_constraintTop_toBottomOf="@+id/setting_user_id" />
+            app:layout_constraintEnd_toEndOf="@+id/Setting_user_id"
+            app:layout_constraintStart_toStartOf="@+id/Setting_user_id"
+            app:layout_constraintTop_toBottomOf="@+id/Setting_user_id" />
 
         <ImageView
             android:id="@+id/setting_add_account"
@@ -151,7 +151,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/setting_LogOut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/setting_LogOut"
-            app:layout_constraintTop_toBottomOf="@+id/setting_user_id"
+            app:layout_constraintTop_toBottomOf="@+id/Setting_user_id"
             app:srcCompat="@drawable/ic_add_account_light"
             tools:ignore="ContentDescription,VectorDrawableCompat" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -164,7 +164,7 @@
         android:background="@drawable/layout_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_user_layout">
+        app:layout_constraintTop_toBottomOf="@+id/Favourite_place_layout">
 
         <TextView
             android:id="@+id/Edit_Profile"
@@ -183,6 +183,7 @@
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:onClick="edit_profile"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -198,6 +199,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/edit_profile_icon"
+            android:onClick="edit_profile"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -209,6 +211,7 @@
             app:layout_constraintStart_toEndOf="@+id/Edit_Profile"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/right_icon"
+            android:onClick="edit_profile"
             tools:ignore="ContentDescription" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -251,6 +254,7 @@
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:onClick="location_info"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -346,6 +350,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/location_icon"
+            android:onClick="setting_language"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -364,6 +369,7 @@
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:onClick="setting_language"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -382,6 +388,7 @@
             android:textColor="@color/WeDrive"
             android:textSize="25sp"
             android:textStyle="bold"
+            android:onClick="setting_language"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

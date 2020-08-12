@@ -12,7 +12,6 @@ import android.widget.Spinner;
 
 import uz.Wedrive.wedrive.R;
 import uz.Wedrive.wedrive.Sign_up_new;
-import uz.Wedrive.wedrive.User.WeDriveHome;
 public class Login extends AppCompatActivity {
 
     Spinner Spinner_SignIn_til;
@@ -21,11 +20,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        Spinner_SignIn_til = findViewById(R.id.SignIn_til);
-
-        ArrayAdapter arrayAdapter = ArrayAdapter.createFromResource(this, R.array.language, R.layout.custom_spinner);
-        Spinner_SignIn_til.setAdapter(arrayAdapter);
     }
 
     public void signup(View view) {
@@ -56,4 +50,9 @@ public class Login extends AppCompatActivity {
                 alertDialog.show();
     }
 
+    public void NEXT(View view) {
+        Intent intent = new Intent(this, Verification.class);
+        startActivity(intent);
+        finish();
+    }
 }

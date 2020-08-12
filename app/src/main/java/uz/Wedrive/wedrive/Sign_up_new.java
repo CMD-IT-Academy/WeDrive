@@ -5,12 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
@@ -18,11 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uz.Wedrive.wedrive.HelperClasses.SliderAdapterSignUp;
+import uz.Wedrive.wedrive.User.WeDriveHome;
 import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment;
 import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment2;
 import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment3;
 import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment4;
-import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment5;
 
 public class Sign_up_new extends AppCompatActivity {
 
@@ -62,8 +60,13 @@ public class Sign_up_new extends AppCompatActivity {
 
     private void NextButton() {
 //        int pos = pagerAdapter.getItemPosition(pagerAdapter);
-        viewPager.setCurrentItem(position_item ++);
-        Toast.makeText(this, "NUMBER : " + position_item, Toast.LENGTH_SHORT).show();
+        if (viewPager.getCurrentItem() == 0 || viewPager.getCurrentItem() == 1 || viewPager.getCurrentItem() == 2) {
+            viewPager.setCurrentItem(position_item ++);
+        } else {
+            Intent intent = new Intent(this, WeDriveHome.class);
+            startActivity(intent);
+            finish();
+        }
 
 
     }

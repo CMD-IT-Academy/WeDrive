@@ -26,4 +26,8 @@ public class MoreScreen extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
+
+    public void back_more(View view) {
+        finish();
+    }
 }

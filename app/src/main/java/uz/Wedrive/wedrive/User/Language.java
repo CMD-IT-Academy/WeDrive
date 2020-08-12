@@ -7,15 +7,15 @@ import android.view.View;
 
 import uz.Wedrive.wedrive.R;
 
-public class FAQs extends AppCompatActivity {
+public class Language extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_faqs);
+        setContentView(R.layout.activity_language);
     }
 
-    public void back_faqs(View view) {
+    public void back_lang(View view) {
         finish();
     }
 }

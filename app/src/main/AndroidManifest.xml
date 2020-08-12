@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.FAQs"></activity>
+        <activity android:name=".User.Language"></activity>
+        <activity android:name=".User.Favourites_Place" />
+        <activity android:name=".User.Edit_Profile" />
+        <activity android:name=".sign.Verification" />
+        <activity android:name=".User.FAQs" />
         <activity android:name=".User.Settings_Payment" />
         <activity android:name=".Sign_up_new" />
         <activity android:name=".User.SettingScreen" />

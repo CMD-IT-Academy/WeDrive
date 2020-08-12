@@ -33,11 +33,11 @@ public class SettingScreen extends AppCompatActivity {
         setContentView(R.layout.activity_setting_screen);
 
         setting_search = findViewById(R.id.setting_search);                  //Edittext
-        settings_text = findViewById(R.id.settings_text);                    //TextView
-        back_settings = findViewById(R.id.back_settings);                    //ImageView
+        settings_text = findViewById(R.id.language_text);                    //TextView
+        back_settings = findViewById(R.id.back_language);                    //ImageView
         search_settings = findViewById(R.id.search_settings);                //ImageView
-        setting_user_name = findViewById(R.id.setting_user_name);            //TextView
-        setting_user_id = findViewById(R.id.setting_user_id);                //TextView
+        setting_user_name = findViewById(R.id.Settting_User_name);            //TextView
+        setting_user_id = findViewById(R.id.Setting_user_id);                //TextView
         setting_LogOut = findViewById(R.id.setting_LogOut);                  //Button
         setting_add_account = findViewById(R.id.setting_add_account);        //ImageView
         Edit_Profile = findViewById(R.id.Edit_Profile);                      //TextView
@@ -61,8 +61,8 @@ public class SettingScreen extends AppCompatActivity {
         Notification_next = findViewById(R.id.Notification_next);            //ImageView
 
         //ConstraintLayout
-        settings_main_layout = findViewById(R.id.settings_main_layout);
-        settings_user_layout = findViewById(R.id.settings_user_layout);
+        settings_main_layout = findViewById(R.id.language_main_layout);
+        settings_user_layout = findViewById(R.id.Favourite_place_layout);
         settings_edit_profile_layout = findViewById(R.id.settings_edit_profile_layout);
         settings_location_layout = findViewById(R.id.settings_location_layout);
         settings_payment_layout = findViewById(R.id.settings_payment_layout);
@@ -201,6 +201,21 @@ public class SettingScreen extends AppCompatActivity {
 
     public void setting_payment(View view) {
         Intent intent = new Intent(getApplicationContext(), Settings_Payment.class);
+        startActivity(intent);
+    }
+
+    public void edit_profile(View view) {
+        Intent intent = new Intent(getApplicationContext(), Edit_Profile.class);
+        startActivity(intent);
+    }
+
+    public void setting_language(View view) {
+        Intent intent = new Intent(getApplicationContext(), Language.class);
+        startActivity(intent);
+    }
+
+    public void location_info(View view) {
+        Intent intent = new Intent(getApplicationContext(), Favourites_Place.class);
         startActivity(intent);
     }
 }

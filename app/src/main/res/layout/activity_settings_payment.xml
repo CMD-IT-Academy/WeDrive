@@ -64,7 +64,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_user_layout"
+        android:id="@+id/Favourite_place_layout"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="15dp"
@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/settings_faqs_main_layout">
 
         <ImageView
-            android:id="@+id/setting_user_picture"
+            android:id="@+id/Setting_user_picture"
             android:layout_width="100dp"
             android:layout_height="75dp"
             android:layout_marginStart="15dp"
@@ -101,9 +101,9 @@
             android:text="Main   "
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/setting_user_picture"
+            app:layout_constraintBottom_toBottomOf="@+id/Setting_user_picture"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/setting_user_picture" />
+            app:layout_constraintTop_toTopOf="@+id/Setting_user_picture" />
 
         <TextView
             android:id="@+id/textView12"
@@ -117,7 +117,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/setting_user_picture" />
+            app:layout_constraintTop_toBottomOf="@+id/Setting_user_picture" />
 
         <TextView
             android:id="@+id/textView13"
@@ -163,7 +163,7 @@
         android:background="@drawable/layout_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_user_layout">
+        app:layout_constraintTop_toBottomOf="@+id/Favourite_place_layout">
 
         <TextView
             android:id="@+id/Edit_Profile"
