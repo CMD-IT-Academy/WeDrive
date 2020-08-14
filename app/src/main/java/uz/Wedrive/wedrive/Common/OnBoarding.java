@@ -133,12 +133,11 @@ public class OnBoarding extends AppCompatActivity {
             currentPos = position;
 
             if (position == 0) {
-                back.setVisibility(View.INVISIBLE);
                 Dots_load1.setImageResource(R.drawable.dots_round_on);
                 Dots_load2.setImageResource(R.drawable.dots_round_off);
                 Dots_load3.setImageResource(R.drawable.dots_round_off);
                 Dots_load4.setImageResource(R.drawable.dots_round_off);
-                skip.setVisibility(View.VISIBLE);
+                skip.setText("Skip");
                 dotsLayout.setVisibility(View.VISIBLE);
                 previous.setVisibility(View.INVISIBLE);
                 next.setVisibility(View.VISIBLE);
@@ -150,8 +149,7 @@ public class OnBoarding extends AppCompatActivity {
                 Dots_load2.setImageResource(R.drawable.dots_round_on);
                 Dots_load3.setImageResource(R.drawable.dots_round_off);
                 Dots_load4.setImageResource(R.drawable.dots_round_off);
-                skip.setVisibility(View.VISIBLE);
-                back.setVisibility(View.INVISIBLE);
+                skip.setText("Skip");
                 dotsLayout.setVisibility(View.VISIBLE);
                 previous.setVisibility(View.VISIBLE);
                 skip.setVisibility(View.VISIBLE);
@@ -163,8 +161,7 @@ public class OnBoarding extends AppCompatActivity {
                 Dots_load2.setImageResource(R.drawable.dots_round_off);
                 Dots_load3.setImageResource(R.drawable.dots_round_on);
                 Dots_load4.setImageResource(R.drawable.dots_round_off);
-                skip.setVisibility(View.VISIBLE);
-                back.setVisibility(View.INVISIBLE);
+                skip.setText("Skip");
                 dotsLayout.setVisibility(View.VISIBLE);
                 previous.setVisibility(View.VISIBLE);
                 skip.setVisibility(View.VISIBLE);
@@ -176,8 +173,7 @@ public class OnBoarding extends AppCompatActivity {
                 Dots_load2.setImageResource(R.drawable.dots_round_off);
                 Dots_load3.setImageResource(R.drawable.dots_round_off);
                 Dots_load4.setImageResource(R.drawable.dots_round_on);
-                skip.setVisibility(View.INVISIBLE);
-                back.setVisibility(View.VISIBLE);
+                skip.setText("Back");
                 next.setVisibility(View.INVISIBLE);
                 dotsLayout.setVisibility(View.INVISIBLE);
                 previous.setVisibility(View.INVISIBLE);

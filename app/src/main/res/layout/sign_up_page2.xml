@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/IV_icon" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/EditProfile_name_surname_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
@@ -60,7 +60,7 @@
             app:srcCompat="@drawable/ic_calendar" />
 
         <EditText
-            android:id="@+id/user_birth"
+            android:id="@+id/Settting_User_name"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
@@ -83,7 +83,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/EditProfile_telephone_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
@@ -94,7 +94,7 @@
         android:background="@drawable/layout_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/EditProfile_name_surname_layout">
 
         <ImageView
             android:id="@+id/gender_icon"

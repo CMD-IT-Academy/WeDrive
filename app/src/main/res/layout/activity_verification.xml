@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
-    tools:context=".sign.Login">
+    tools:context=".sign.Verification">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,41 +27,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/EditProfile_telephone_layout">
 
-            <EditText
-                android:id="@+id/user_tel_number"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/custom_edittext"
-                android:ems="10"
-                android:hint="- -   - - -   - -   - -"
-                android:inputType="numberDecimal"
-                android:paddingLeft="30dp"
-                android:textColor="@color/colorBlack"
-                android:textColorHint="#5D5D5D"
-                android:textSize="17sp"
-                android:textStyle="bold"
+            <com.chaos.view.PinView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:itemCount="6"
+                app:itemRadius="10dp"
+                app:itemHeight="45dp"
+                app:itemWidth="45dp"
+                app:itemSpacing="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView3"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="55dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:gravity="center"
-                android:text="+998"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -78,35 +57,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-            <ImageView
-                android:id="@+id/tel_country_icon"
-                android:layout_width="55dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_uzbekistan"
-                tools:ignore="VectorDrawableCompat" />
-
-            <Spinner
-                android:id="@+id/user_tel_country"
+            <TextView
+                android:id="@+id/textView8"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/custom_spinner_gender"
-                android:entries="@array/telephone_country"
-                android:paddingLeft="30dp"
-                android:textColor="@color/colorBlack"
-                android:textSize="23sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:text="+998 99 568 25 81"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tel_country_icon"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -115,7 +83,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/black_btn"
             android:onClick="NEXT"
@@ -127,7 +95,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/EditProfile_name_surname_layout"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
             tools:ignore="MissingConstraints,OnClick" />
 
         <ImageView
@@ -146,7 +114,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:srcCompat="@drawable/for_reset_password"
+            app:srcCompat="@drawable/new_message_bro"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -154,12 +122,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Enter Your Mobile Number To Confirm\nCountry Code and Proceed Sign in"
+            android:text="We Have Sent Verification Code as SMS\nto The Number Below"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/resend_code"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/EditProfile_name_surname_layout"
+            app:layout_constraintTop_toBottomOf="@+id/EditProfile_name_surname_layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -27,4 +27,9 @@ public class ActivityScreen extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
