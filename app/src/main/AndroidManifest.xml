@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelperClasses.SettingLanguage"></activity>
+        <activity android:name=".HelperClasses.LanguageSet"></activity>
+        <activity android:name=".HelperClasses.SettingLanguage" />
         <activity android:name=".User.Language" />
         <activity android:name=".User.Favourites_Place" />
         <activity android:name=".User.Edit_Profile" />
