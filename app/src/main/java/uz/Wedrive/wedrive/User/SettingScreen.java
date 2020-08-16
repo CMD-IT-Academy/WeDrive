@@ -44,9 +44,9 @@ public class SettingScreen extends AppCompatActivity {
         Location_Info = findViewById(R.id.Location_Info);                    //TextView
         Payment = findViewById(R.id.Payment);                                //TextView
         Language = findViewById(R.id.Language);                              //TextView
-        or_line1 = findViewById(R.id.or_line1);                              //TextView
-        or_line2 = findViewById(R.id.or_line2);                              //TextView
-        setting_personal_text = findViewById(R.id.setting_personal_text);    //TextView
+        or_line1 = findViewById(R.id.official_line);                              //TextView
+        or_line2 = findViewById(R.id.officialline2);                              //TextView
+        setting_personal_text = findViewById(R.id.officialtext);    //TextView
         Notification = findViewById(R.id.Notification);                      //TextView
         DarkMode = findViewById(R.id.DarkMode);                              //TextView
         Edit_Profile_icon = findViewById(R.id.Edit_Profile_icon);            //ImageView
