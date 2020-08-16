@@ -20,10 +20,6 @@
         <activity android:name=".User.SettingScreen" />
         <activity android:name=".User.ActivityScreen" />
         <activity android:name=".User.MoreScreen" />
-        <activity android:name=".sign.Forgot_Password.Email_Verification" />
-        <activity android:name=".sign.Forgot_Password.Forgot_Password_Telephone" />
-        <activity android:name=".sign.Forgot_Password.Forgot_Password_email" />
-        <activity android:name=".sign.Forgot_Password.ForgotPassword" />
         <activity
             android:name=".sign.Login"
             android:screenOrientation="portrait" />
