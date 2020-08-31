@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.Language"></activity>
+        <activity android:name=".HelperClasses.LanguageSet"></activity>
+        <activity android:name=".HelperClasses.SettingLanguage" />
+        <activity android:name=".User.Language" />
         <activity android:name=".User.Favourites_Place" />
         <activity android:name=".User.Edit_Profile" />
         <activity android:name=".User.FAQs" />
@@ -18,10 +20,6 @@
         <activity android:name=".User.SettingScreen" />
         <activity android:name=".User.ActivityScreen" />
         <activity android:name=".User.MoreScreen" />
-        <activity android:name=".sign.Forgot_Password.Email_Verification" />
-        <activity android:name=".sign.Forgot_Password.Forgot_Password_Telephone" />
-        <activity android:name=".sign.Forgot_Password.Forgot_Password_email" />
-        <activity android:name=".sign.Forgot_Password.ForgotPassword" />
         <activity
             android:name=".Common.OnBoarding"
             android:screenOrientation="portrait" />

@@ -103,6 +103,10 @@
     <string name="notification">Notification</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="payment_settings">Payment Settings</string>
+    <string name="help_amp_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="data_amp_privacy_policy"><![CDATA[Data & Privacy Policy]]></string>
+    <string name="faqs_amp_support"><![CDATA[FAQS & Support]]></string>
+    <string name="copyright_2020_wedrive_llc_nall_rights_reserved">Copyright © 2020 WeDrive LLC\nAll Rights reserved</string>
 
     <string-array name="telephone_country">
         <item>Uzbekistan</item>

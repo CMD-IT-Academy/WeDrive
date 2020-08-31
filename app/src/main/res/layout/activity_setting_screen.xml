@@ -395,7 +395,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/or_line1"
+        android:id="@+id/official_line"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:background="@drawable/or_chiziq"
@@ -403,7 +403,7 @@
         app:layout_constraintTop_toBottomOf="@+id/settings_language_layout" />
 
     <TextView
-        android:id="@+id/or_line2"
+        android:id="@+id/officialline2"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:background="@drawable/or_chiziq"
@@ -411,16 +411,16 @@
         app:layout_constraintTop_toBottomOf="@+id/settings_language_layout" />
 
     <TextView
-        android:id="@+id/setting_personal_text"
+        android:id="@+id/officialtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/personal"
         android:textColor="#000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/or_line2"
+        app:layout_constraintEnd_toStartOf="@+id/officialline2"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toEndOf="@+id/or_line1"
+        app:layout_constraintStart_toEndOf="@+id/official_line"
         app:layout_constraintTop_toBottomOf="@+id/settings_language_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -430,7 +430,7 @@
         android:background="@drawable/layout_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/or_line1">
+        app:layout_constraintTop_toBottomOf="@+id/official_line">
 
         <ImageView
             android:id="@+id/Notification_next"
