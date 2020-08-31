@@ -1,6 +1,7 @@
 package uz.Wedrive.wedrive.HelperClasses;
 
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
@@ -16,6 +17,26 @@ import uz.Wedrive.wedrive.Sign_up_new;
 
 public class SliderAdapterSignUp extends FragmentStatePagerAdapter {
     private List<Fragment> fragmentList;
+    private Fragment mCurrentFragment;
+   public static int num;
+
+
+    public Fragment getCurrentFragmnent(){
+        return mCurrentFragment;
+    }
+
+    public SliderAdapterSignUp(FragmentManager fm, Fragment mCurrentFragment) {
+        super(fm);
+        this.mCurrentFragment = mCurrentFragment;
+    }
+
+    @Override
+    public void setPrimaryItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        if (getCurrentFragmnent() != object){
+            mCurrentFragment = (Fragment) object;
+        }
+        super.setPrimaryItem(container, position, object);
+    }
 
     public SliderAdapterSignUp(FragmentManager fm, List<Fragment> fragmentList) {
         super(fm);
@@ -25,6 +46,7 @@ public class SliderAdapterSignUp extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Sign_up_new.position_item = position;
+        num = position;
         return fragmentList.get(position);
     }
 

@@ -62,4 +62,44 @@ public class Settings {
         return preferences.getString("PROFIL_PHONE", "");
     }
 
+    public void setFireAutId(String select) {
+        editor = preferences.edit();
+        editor.putString("FireAutId", select);
+        editor.apply();
+    }
+
+    public String getFireAutId() {
+        return preferences.getString("FireAutId","" );
+    }
+
+    public void setId(String select) {
+        editor = preferences.edit();
+        editor.putString("ID", select);
+        editor.apply();
+    }
+
+    public String getId() {
+        return preferences.getString("ID","" );
+    }
+
+    public void setEmail(String profilEmail) {
+        editor = preferences.edit();
+        editor.putString("PROFIL_EMAIL", profilEmail);
+        editor.apply();
+    }
+
+    public String getEmail() {
+        return preferences.getString("PROFIL_EMAIL", "");
+    }
+
+    public void setData(String profilEmail) {
+        editor = preferences.edit();
+        editor.putString("PROFIL_DATA", profilEmail);
+        editor.apply();
+    }
+
+    public String getData() {
+        return preferences.getString("PROFIL_DATA", "");
+    }
+
 }

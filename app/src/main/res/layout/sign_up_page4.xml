@@ -22,12 +22,12 @@
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Userinfo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:gravity="center"
-        android:text="Hello Og'abek\nAlmost Done Set a Profile Picture"
+        android:text="Hello Og'abek \nAlmost Done Set a Profile Picture"
         android:textColor="#8D8D8D"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -74,7 +74,7 @@
         android:background="@drawable/layout_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/Userinfo">
 
         <TextView
             android:id="@+id/textView16"

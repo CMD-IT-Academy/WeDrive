@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -28,9 +29,11 @@ import java.util.concurrent.TimeUnit;
 import uz.Wedrive.wedrive.R;
 import uz.Wedrive.wedrive.SharePreferance.Settings;
 
-public class PageFragment2 extends Fragment {
-    static EditText PhoneNumber;
-    public static Boolean Page2 = false;
+public class PageGetDateGender extends Fragment {
+    public static EditText Userdata;
+    public static Spinner UserGen;
+    public static Boolean Page ;
+
 
     private ProgressBar progressBar;
 
@@ -39,37 +42,25 @@ public class PageFragment2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.sign_up_page2, container, false);
 
-        PhoneNumber = rootView.findViewById(R.id.phone_number);
-        PhoneNumber.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
-        progressBar = rootView.findViewById(R.id.progressbas1);
-
-//        SendverficationCode(PhoneNumber.getText().toString());
-
-
-//
+        Userdata = rootView.findViewById(R.id.Settting_User_name);
+        UserGen = rootView.findViewById(R.id.user_gender);
 
 
         return rootView;
     }
 
-    public static Boolean CallBackPage2() {
-        if (!PhoneNumber.getText().toString().isEmpty()) {
-            Settings.getSettings().setPhone(PhoneNumber.getText().toString());
-            Page2 = true;
+    public static Boolean CallGetDataGen() {
+        String Userd = Userdata.getText().toString();
+        if (!Userd.isEmpty()) {
+            Page = true;
+            Settings.getSettings().setData(Userdata.getText().toString());
+        } else {
+            Page = false;
+            Userdata.setError("Set Data");
+            Userdata.setFocusable(true);
         }
-
-        return Page2;
+        return Page;
     }
-
-    public static void Warring() {
-        PhoneNumber.setError("Edit Phone Number");
-        PhoneNumber.setFocusable(true);
-    }
-
-
-
-
-
 
 
 }

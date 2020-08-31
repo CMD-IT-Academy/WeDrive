@@ -7,7 +7,7 @@ import android.os.SystemClock;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 import uz.Wedrive.wedrive.R;
-import uz.Wedrive.wedrive.sign.Login;
+import uz.Wedrive.wedrive.Sign_up_new;
 
 public class Splash extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class Splash extends AppCompatActivity {
             finish();
         }
         else {
-            Intent intent = new Intent(Splash.this, Login.class);
+            Intent intent = new Intent(Splash.this, Sign_up_new.class);
             startActivity(intent);
             finish();
         }

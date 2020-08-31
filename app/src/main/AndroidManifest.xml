@@ -12,7 +12,6 @@
         <activity android:name=".User.Language"></activity>
         <activity android:name=".User.Favourites_Place" />
         <activity android:name=".User.Edit_Profile" />
-        <activity android:name=".sign.Verification" />
         <activity android:name=".User.FAQs" />
         <activity android:name=".User.Settings_Payment" />
         <activity android:name=".Sign_up_new" />
@@ -23,9 +22,6 @@
         <activity android:name=".sign.Forgot_Password.Forgot_Password_Telephone" />
         <activity android:name=".sign.Forgot_Password.Forgot_Password_email" />
         <activity android:name=".sign.Forgot_Password.ForgotPassword" />
-        <activity
-            android:name=".sign.Login"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".Common.OnBoarding"
             android:screenOrientation="portrait" />

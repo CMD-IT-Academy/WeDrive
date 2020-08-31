@@ -5,18 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".Common.OnBoarding">
+    tools:context=".Sign_up_new">
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toTopOf="parent"></androidx.viewpager.widget.ViewPager>
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="0dp"
+        android:id="@+id/next_page"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/black_btn"
-        android:onClick="NEXT"
+        android:onClick="NextButton"
         android:text="@string/next_btn"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
@@ -25,21 +30,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dot1"
-        tools:ignore="OnClick" />
+        app:layout_constraintTop_toBottomOf="@+id/dot1">
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_marginTop="35dp"
-        android:id="@+id/slider2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/dot1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <!--        app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
-
-    </androidx.viewpager.widget.ViewPager>
+    </Button>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -52,6 +45,8 @@
         app:srcCompat="@drawable/wedrive_logo_black"
         tools:ignore="ContentDescription" />
 
+
+
     <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
         android:id="@+id/dot1"
         android:layout_width="wrap_content"
@@ -61,11 +56,11 @@
         app:dotsColor="@color/WeDrive"
         app:dotsSize="18dp"
         app:dotsSpacing="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintBottom_toBottomOf="@+id/next_page"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slider2"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9390"
         app:layout_goneMarginTop="15dp"
         app:selectedDotColor="@color/colorBlack"
         app:stiffness="300">

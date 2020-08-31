@@ -33,6 +33,96 @@
         app:layout_constraintStart_toStartOf="@+id/IV_icon"
         app:layout_constraintTop_toBottomOf="@+id/IV_icon" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/EditProfile_name_surname_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/email_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_user" />
+
+            <EditText
+                android:layout_margin="5dp"
+                android:id="@+id/Last_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edittext"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="30dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="#5D5D5D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/EditProfile_telephone_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:background="@drawable/layout_round"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/EditProfile_name_surname_layout">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/email_icon"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:layout_marginLeft="15dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/ic_user" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/user_gender"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginEnd="20dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:background="@drawable/custom_edittext"-->
+    <!--            android:ems="10"-->
+    <!--            android:hint="@string/last_name"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            android:paddingLeft="30dp"-->
+    <!--            android:textColor="@color/colorBlack"-->
+    <!--            android:textColorHint="#5D5D5D"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/email_icon"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/EditProfile_name_surname_layout"
         android:layout_width="match_parent"
@@ -47,19 +137,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        <ImageView
-            android:id="@+id/telephone_flag"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_user" />
-
         <EditText
-            android:id="@+id/Settting_User_name"
+            android:id="@+id/First_name"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
@@ -79,24 +158,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/telephone_flag"
             app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/EditProfile_telephone_layout"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/layout_round"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditProfile_name_surname_layout">
 
         <ImageView
-            android:id="@+id/email_icon"
+            android:id="@+id/telephone_flag"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="15dp"
@@ -105,28 +169,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_user" />
-
-        <EditText
-            android:id="@+id/user_gender"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/custom_edittext"
-            android:ems="10"
-            android:hint="@string/last_name"
-            android:inputType="textPersonName"
-            android:paddingLeft="30dp"
-            android:textColor="@color/colorBlack"
-            android:textColorHint="#5D5D5D"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/email_icon"
-            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

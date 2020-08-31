@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import uz.Wedrive.wedrive.HelperClasses.SliderAdapter;
 import uz.Wedrive.wedrive.R;
-import uz.Wedrive.wedrive.sign.Login;
+import uz.Wedrive.wedrive.Sign_up_new;
 
 public class OnBoarding extends AppCompatActivity {
 
@@ -97,7 +97,7 @@ public class OnBoarding extends AppCompatActivity {
 
 
     public void Started(View view){
-        startActivity(new Intent(this, Login.class));
+        startActivity(new Intent(this, Sign_up_new.class));
         finish();
     }
     public void next(View view){
@@ -196,7 +196,7 @@ public class OnBoarding extends AppCompatActivity {
             if(ikkilik == 1) {
                 viewPager.setCurrentItem(currentPos + 3);
             } else if(ikkilik == 2){
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), Sign_up_new.class);
                 startActivity(intent);
                 finish();
             }
@@ -207,7 +207,7 @@ public class OnBoarding extends AppCompatActivity {
                 viewPager.setCurrentItem((currentPos + 2));
             }
             else if(ikkilik == 2){
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), Sign_up_new.class);
                 startActivity(intent);
                 finish();
             }
@@ -218,7 +218,7 @@ public class OnBoarding extends AppCompatActivity {
                 viewPager.setCurrentItem(currentPos + 1);
             }
             else if(ikkilik == 2) {
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), Sign_up_new.class);
                 startActivity(intent);
                 finish();
             }

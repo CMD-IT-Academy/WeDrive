@@ -5,14 +5,15 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.telephony.PhoneNumberUtils;
+import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
 import java.util.ArrayList;
@@ -20,11 +21,13 @@ import java.util.List;
 
 import uz.Wedrive.wedrive.HelperClasses.SliderAdapterSignUp;
 import uz.Wedrive.wedrive.SharePreferance.Settings;
-import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment;
-import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment2;
-import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment3;
-import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment4;
-import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFragment5;
+import uz.Wedrive.wedrive.User.WeDriveHome;
+import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageGetName;
+import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageGetDateGender;
+import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageGetEmail;
+import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageFinal;
+import uz.Wedrive.wedrive.sign.SignUpPageFragment.PageGetPhone;
+import uz.Wedrive.wedrive.sign.SignUpPageFragment.PagePhoneAut;
 
 public class Sign_up_new extends AppCompatActivity {
 
@@ -34,6 +37,8 @@ public class Sign_up_new extends AppCompatActivity {
     private Button next_btn;
     public static int position_item;
     int currentTab = 0;
+    public Boolean fireAutSelect;
+    public static Context mConext;
 
 
     @Override
@@ -41,13 +46,17 @@ public class Sign_up_new extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_new);
         Settings.init(getApplicationContext());
-        List<Fragment> list = new ArrayList<>();
-        list.add(new PageFragment());
-        list.add(new PageFragment2());
-        list.add(new PageFragment3());
-        list.add(new PageFragment4());
+        mConext = getApplicationContext();
 
-        next_btn = findViewById(R.id.login);
+        List<Fragment> list = new ArrayList<>();
+        list.add(new PageGetPhone());
+        list.add(new PagePhoneAut());
+        list.add(new PageGetName());
+        list.add(new PageGetDateGender());
+        list.add(new PageGetEmail());
+        list.add(new PageFinal());
+
+        next_btn = findViewById(R.id.next_page);
         wormDotsIndicator = findViewById(R.id.dot1);
         viewPager = findViewById(R.id.slider2);
         pagerAdapter = new SliderAdapterSignUp(getSupportFragmentManager(), list);
@@ -65,7 +74,7 @@ public class Sign_up_new extends AppCompatActivity {
                 currentTab = position;
                 switch (position) {
                     case 1:
-                        if (PageFragment.Page1) {
+                        if (PageGetPhone.PageGetPhone) {
                             // swipe from left to right
                             viewPager.setCurrentItem(1);
                         } else {
@@ -74,14 +83,22 @@ public class Sign_up_new extends AppCompatActivity {
                         }
                         break;
                     case 2:
-                        if (PageFragment2.Page2) {
+                        if (PagePhoneAut.PagePhoneAut) {
+                            // swipe from left to right
                             viewPager.setCurrentItem(2);
                         } else {
+                            // swipe from right to left
                             viewPager.setCurrentItem(3);
                         }
                         break;
+                    case 3:
+                        if (PageGetName.Callback()) {
+                            viewPager.setCurrentItem(3);
+                        } else {
+                            viewPager.setCurrentItem(4);
+                        }
+                        break;
                 }
-
             }
 
             @Override
@@ -90,30 +107,50 @@ public class Sign_up_new extends AppCompatActivity {
             }
         });
 
-
         next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.e("FFF", "CLICK BUTTON");
                 NextButton();
             }
         });
 
     }
 
-    private void NextButton() {
-        if (currentTab == 0) {
-            if (PageFragment.CallbackName()) {
-                viewPager.setCurrentItem(currentTab + 1);
-            }else {
-                PageFragment.Warring();
-            }
-        }else if (currentTab == 1){
-            if (PageFragment2.CallBackPage2()){
-                viewPager.setCurrentItem(currentTab + 1);
-            }else {
-                PageFragment2.Warring();
-            }
+    public void nextPage() {
+        Log.e("CAM2", "Next page");
+        viewPager.setCurrentItem(currentTab + 1);
 
+    }
+
+    public void NextButton() {
+        if (currentTab == 0) {
+            if (PageGetPhone.CallbackName()) {
+                Log.e("CAM2", "case 2 succesfull");
+                viewPager.setCurrentItem(currentTab + 1);
+                ((PagePhoneAut) ((SliderAdapterSignUp) viewPager.getAdapter()).getCurrentFragmnent()).sendVerification(PageGetPhone.PhoneNumber);
+                ((PagePhoneAut) ((SliderAdapterSignUp) viewPager.getAdapter()).getCurrentFragmnent()).setPhoneTextView(PageGetPhone.PhoneNumber.replaceFirst("(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d+)", "$1($2)$3-$4-$5"));
+            }
+        } else if (currentTab == 1) {
+            ((PagePhoneAut) ((SliderAdapterSignUp) viewPager.getAdapter()).getCurrentFragmnent()).CallbackPone();
+        }
+        if (currentTab == 2) {
+//            PageGetName pageGetName = new PageGetName();
+//            pageGetName.Callback();
+            if (PageGetName.Callback()) {
+                Log.e("CAM2", "PAGE SUCCESFULL");
+                viewPager.setCurrentItem(currentTab + 1);
+            }
+        }else if (currentTab == 3){
+            if (PageGetDateGender.CallGetDataGen()){
+                viewPager.setCurrentItem(currentTab + 1);
+            }
+        }else if (currentTab == 4){
+            viewPager.setCurrentItem(currentTab + 1);
+        }else if (currentTab == 5){
+            Intent intent = new Intent(Sign_up_new.this, WeDriveHome.class);
+            startActivity(intent);
+            finish();
         }
 
         Toast.makeText(this, "NUMBER : " + currentTab, Toast.LENGTH_SHORT).show();
@@ -124,4 +161,9 @@ public class Sign_up_new extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
     }
+
+
 }
+
+
+
